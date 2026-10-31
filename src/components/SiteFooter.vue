@@ -18,16 +18,25 @@ import { RouterLink } from 'vue-router';
         <a href="mailto:a10044557744998@163.com">联系</a>
       </div>
     </div>
-    <p class="disclaimer container">
-
-    </p>
-    <p class="disclaimer-text container">
-      Basic Craft Launcher 是独立开源项目。
-    </p>
-    <!-- 新增的原作者信息 -->
-    <p class="disclaimer-text container" style="padding-top: 4px;">
-      网站原作者：<a href="https://github.com/tiouoo" target="_blank" rel="noreferrer" style="color: var(--blue); text-decoration: underline;">https://github.com/tiouoo</a>
-    </p>
+    
+    <p class="disclaimer container"></p>
+    
+    <!-- 严谨的版权与开源声明区 -->
+    <div class="disclaimer-text container" style="line-height: 1.8;">
+      <p style="margin: 0 0 6px;">
+        Basic Craft Launcher 官方网站前端基于 
+        <a href="https://github.com/tiouoo/Portal/tree/main" target="_blank" rel="noreferrer" class="link">Portal</a> 
+        开源项目二次修改。
+      </p>
+      <p style="margin: 0 0 6px;">
+        Copyright © Portal 2026. 基于 AGPL-3.0-or-later 开源许可发布。原作者版权归 
+        <a href="https://github.com/tiouoo" target="_blank" rel="noreferrer" class="link">tiouoo</a> 
+        所有。
+      </p>
+      <p style="margin: 0; font-weight: 500; color: #70798a;">
+        Basic Craft Launcher 启动器核心为独立开发的原创软件。
+      </p>
+    </div>
   </footer>
 </template>
 
@@ -71,15 +80,19 @@ footer {
   margin-top: 22px;
   padding-top: 18px;
   border-top: 1px solid #e0e4ea;
+}
+.disclaimer-text {
   color: #a0a6b1;
   font-size: 12px;
   text-align: center;
 }
-.disclaimer-text {
-  padding-top: 10px;
-  color: #a0a6b1;
-  font-size: 12px;
-  text-align: center;
+.link {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.link:hover {
+  color: #1f62df;
 }
 
 @media (max-width: 820px) {
