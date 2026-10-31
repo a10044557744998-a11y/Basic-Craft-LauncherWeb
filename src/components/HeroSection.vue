@@ -1,34 +1,34 @@
 <script setup lang="ts">
-import { computed } from 'vue';
 import { RouterLink } from 'vue-router';
 import logoUrl from '../assets/Basic Craft Launcher-logo.svg';
-import { cnbBase } from '../data/downloads';
 
-// 直接写死为 Windows 下载
-const downloadFileName = 'Basic Craft Launcher.win.x64.installer.zip';
-
-// 获取下载链接（默认使用 CNB 源，最新版）
-const downloadUrl = computed(() => {
-  return `${cnbBase('release')}/${downloadFileName}`;
-});
+// 直接写死为你提供的 GitHub 发布页链接
+const downloadUrl = 'https://github.com/a10044557744998-a11y/Basic-Craft-Launcher/releases';
 </script>
 
 <template>
   <section class="hero container">
     <div class="hero-copy">
-      <div class="eyebrow"><span></span> 开源 · 为 Minecraft 而生</div>
+      <!-- 修改了小字 -->
+      <div class="eyebrow"><span></span> 纯粹 · 极简 · 专为 Minecraft 打造</div>
       <p class="brand-title">Basic Craft Launcher</p>
-      <h1>你的 Minecraft，<br class="hero-break" /><em>从这里出发</em></h1>
+      
+      <!-- 修改了大标题 -->
+      <h1>回归纯粹，<br class="hero-break" /><em>尽情创造</em></h1>
+      
+      <!-- 修改了副标题描述 -->
       <p>
         <span class="desc-desktop"
-          >Basic Craft Launcher 启动实例资源与记录收进一个工作区 —— 少一点配置，多一点游戏。</span
+          >Basic Craft Launcher 专为 Minecraft 打造的现代化启动器。化繁为简，让游戏回归乐趣，把时间留给真正的冒险。</span
         >
         <span class="desc-mobile"
-          >Basic Craft Launcher 把启动、实例、资源与记录收进一个工作区。<br />少一点配置，多一点游戏。</span
+          >Basic Craft Launcher 专为 Minecraft 打造的现代化启动器。<br />化繁为简，让游戏回归乐趣。</span
         >
       </p>
+      
       <div class="hero-actions">
-        <a class="button primary" :href="downloadUrl">
+        <!-- 这里的 href 绑定了新的 downloadUrl -->
+        <a class="button primary" :href="downloadUrl" target="_blank" rel="noreferrer">
           <!-- 只保留 Windows 图标 -->
           <svg
             class="button-icon"
