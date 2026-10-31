@@ -1,7 +1,7 @@
 # Basic Craft Launcher
 
-这是一个由我个人独立开发的 Minecraft 启动器。
+> **关于本站（官网）的版权声明**
+> 本网站的前端 UI 模板基于开源项目 [Portal](https://github.com/tiouoo/Portal/tree/main) 二次修改而来。
+> 原项目遵循 AGPL-3.0-or-later 协议，原作者版权归 [@tiouoo](https://github.com/tiouoo) 所有。
+> 本项目（Basic Craft Launcher 启动器核心）为独立开发的原创软件，与本网站模板源码无关。
 
-## 关于网站
-本项目的官方网站前端 UI 基于 [Portal](https://github.com/tiouoo/Portal/tree/main) 开源项目修改而来。
-原项目遵循 AGPL-3.0 协议。感谢原作者提供的优秀 UI 设计。
