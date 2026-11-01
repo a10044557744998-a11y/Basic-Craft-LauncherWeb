@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Basic Craft Launcher.tiouo.cc/sitemap.xml
